@@ -28,3 +28,13 @@ def bfs_maze(maze, start, end):
                 parent[neighbor] = current
     
     return "No path found."
+maze = [
+    [0, 0, 1],
+    [0, 1, 0],
+    [0, 0, 0]
+]
+start = (0, 0)
+end = (2, 2)
+
+result = bfs_maze(maze, start, end)
+print(result)
